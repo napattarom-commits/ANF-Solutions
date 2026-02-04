@@ -1,0 +1,523 @@
+/* =========================
+   ANF SOLUTIONS - Light Theme
+   White & Green (Enterprise)
+   ========================= */
+
+:root{
+  --brand:#16a34a;          /* green accent */
+  --brand-soft:#dcfce7;
+
+  --bg:#f8fafc;             /* page background */
+  --panel:#ffffff;          /* cards / white sections */
+  --panel-soft:#f1f5f9;
+
+  --text:#0f172a;           /* main text */
+  --muted:#475569;          /* secondary text */
+  --line:#e2e8f0;
+
+  --radius:16px;
+  --radius-sm:12px;
+  --max:1160px;
+  --shadow:0 8px 24px rgba(15,23,42,.08);
+}
+
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--text);
+  background: linear-gradient(180deg, #ffffff, var(--bg));
+  line-height:1.6;
+}
+
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+
+.container{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:0 20px;
+}
+
+/* ---------------- HEADER ---------------- */
+.header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+
+  padding:14px 20px;
+  background:#ffffff;
+  border-bottom:1px solid var(--line);
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.logo{
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  object-fit:cover;
+  border:1px solid var(--line);
+  background:#fff;
+}
+.brand-text strong{
+  font-weight:800;
+}
+.brand-text span{
+  color:var(--muted);
+  font-size:.9rem;
+}
+
+.nav{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.nav a{
+  color:var(--muted);
+  font-weight:600;
+  padding:8px 10px;
+  border-radius:999px;
+}
+.nav a:hover{
+  color:var(--text);
+  background:var(--panel-soft);
+}
+
+.btn{
+  padding:10px 14px;
+  border-radius:999px;
+  font-weight:700;
+  border:1px solid var(--line);
+}
+.btn-primary{
+  background:var(--brand);
+  color:#fff;
+  border-color:transparent;
+}
+.btn-primary:hover{
+  filter:brightness(1.05);
+}
+.btn-ghost{
+  background:#fff;
+}
+.btn-ghost:hover{
+  background:var(--panel-soft);
+}
+
+@media (max-width:760px){
+  .nav a:not(.btn){ display:none; }
+}
+
+/* ---------------- SECTIONS ---------------- */
+.section{
+  padding:64px 0;
+}
+.section.hero{
+  padding:56px 0;
+}
+.section.alt{
+  background:var(--panel-soft);
+}
+.section.cta{
+  padding:40px 0 64px;
+}
+
+/* ---------------- TYPOGRAPHY ---------------- */
+h1{ font-size:clamp(28px,3vw,42px); margin:0 0 12px; }
+h2{ font-size:clamp(22px,2.2vw,30px); margin:0 0 8px; }
+h3{ margin:0 0 8px; }
+
+.lead{
+  max-width:60ch;
+  color:var(--muted);
+}
+.muted{ color:var(--muted); }
+
+.pill{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  background:var(--brand-soft);
+  color:var(--brand);
+  font-size:.85rem;
+  font-weight:600;
+}
+
+/* ---------------- LAYOUT ---------------- */
+.grid-2{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:24px;
+}
+@media (max-width:900px){
+  .grid-2{ grid-template-columns:1fr; }
+}
+
+.row{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+
+/* ---------------- HERO ---------------- */
+.actions{
+  display:flex;
+  gap:12px;
+  margin-top:16px;
+  flex-wrap:wrap;
+}
+
+.trust{
+  display:flex;
+  gap:12px;
+  margin-top:20px;
+  flex-wrap:wrap;
+}
+.trust-item{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:10px 12px;
+  min-width:120px;
+}
+.trust-item strong{
+  display:block;
+  font-size:1.1rem;
+}
+.trust-item span{
+  color:var(--muted);
+  font-size:.9rem;
+}
+
+.hero-card{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:18px;
+  box-shadow:var(--shadow);
+}
+
+.checklist{
+  padding-left:18px;
+  margin:0;
+}
+.checklist li{
+  margin:8px 0;
+  color:var(--muted);
+}
+
+/* ---------------- CERTIFICATES (WHITE) ---------------- */
+.cert-grid{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:16px;
+  margin-top:20px;
+}
+@media (max-width:900px){
+  .cert-grid{ grid-template-columns:repeat(3,1fr); }
+}
+@media (max-width:520px){
+  .cert-grid{ grid-template-columns:repeat(2,1fr); }
+}
+
+.cert-grid img{
+  background:#ffffff;              /* 🔲 white background */
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:14px;
+  height:150px;
+  object-fit:contain;
+  box-shadow:var(--shadow);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.cert-grid img:hover{
+  transform:translateY(-3px);
+  box-shadow:0 12px 28px rgba(15,23,42,.12);
+}
+
+/* ---------------- CTA ---------------- */
+.cta-inner{
+  background:linear-gradient(135deg, var(--brand-soft), #ffffff);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+}
+@media (max-width:760px){
+  .cta-inner{ flex-direction:column; align-items:flex-start; }
+}
+
+/* ---------------- FOOTER ---------------- */
+.footer{
+  background:#ffffff;
+  border-top:1px solid var(--line);
+  padding:28px 0;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:16px;
+}
+@media (max-width:900px){
+  .footer-grid{ grid-template-columns:1fr; }
+}
+.footer a{
+  color:var(--muted);
+}
+.footer a:hover{
+  color:var(--text);
+}
+.nav a[aria-current="page"] {
+  color: var(--brand);
+  background: var(--brand-soft);
+  font-weight: 700;
+}
+/* =========================
+   MOBILE OPTIMIZATION
+   ========================= */
+
+/* ----- Global spacing ----- */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .lead {
+    font-size: 15px;
+  }
+}
+
+/* ----- Header / Nav ----- */
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 16px;
+  }
+
+  .logo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .brand-text span {
+    display: none; /* ซ่อน Co., Ltd. บนจอเล็ก */
+  }
+
+  .nav {
+    gap: 6px;
+  }
+
+  .nav a:not(.btn) {
+    display: none; /* ซ่อนเมนู เหลือ CTA */
+  }
+
+  .btn {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
+
+/* ----- Hero layout ----- */
+@media (max-width: 900px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card {
+    margin-top: 16px;
+  }
+}
+
+/* ----- Trust boxes ----- */
+@media (max-width: 768px) {
+  .trust {
+    gap: 8px;
+  }
+
+  .trust-item {
+    min-width: unset;
+    flex: 1;
+    text-align: center;
+  }
+}
+
+/* ----- Cards / Services ----- */
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 14px;
+  }
+}
+
+/* ----- Certificates ----- */
+@media (max-width: 768px) {
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .cert-grid img {
+    height: 140px;
+    padding: 10px;
+  }
+}
+
+/* ----- CTA ----- */
+@media (max-width: 768px) {
+  .cta-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta-inner .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ----- Footer ----- */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+}
+/* =========================
+   HAMBURGER MENU
+   ========================= */
+
+.menu-btn{
+  display:none;
+  width:44px;
+  height:44px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:#fff;
+  font-size:22px;
+  line-height:1;
+  cursor:pointer;
+}
+
+.mobile-menu{
+  display:none;
+  background:#fff;
+  border-bottom:1px solid var(--line);
+  padding:12px 16px;
+}
+
+.mobile-menu a{
+  display:block;
+  padding:12px 10px;
+  border-radius:12px;
+  color:var(--text);
+  font-weight:600;
+}
+
+.mobile-menu a:hover{
+  background:var(--panel-soft);
+}
+
+.mobile-menu .btn{
+  display:flex;
+  justify-content:center;
+  margin-top:10px;
+}
+
+/* Mobile behavior */
+@media (max-width: 768px){
+  .menu-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  /* hide desktop links + CTA on mobile (use panel menu instead) */
+  .nav a:not(.btn){ display:none; }
+  .nav .btn{ display:none; }
+
+  .mobile-menu.open{ display:block; }
+}
+/* Hide "show more" or extra CTA buttons under certifications */
+.cert-grid + .inline-cta,
+.cert-grid + .actions {
+  display: none;
+}
+/* =========================
+   CERTIFICATIONS PAGE TWEAK
+   - remove extra CTA buttons under cert grid
+   - add bottom spacing
+   ========================= */
+
+/* 1) Hide any CTA row under certification grid (more robust than +) */
+.cert-grid ~ .inline-cta,
+.cert-grid ~ .actions {
+  display: none !important;
+}
+
+/* (optional) if you used a "show more" button class anywhere */
+.show-more,
+.load-more,
+.more-btn {
+  display: none !important;
+}
+
+/* 2) Add breathing room below the grid */
+.cert-grid {
+  margin-bottom: 40px;
+}
+
+/* 3) Add extra padding at the bottom of the section that contains cert-grid
+   (works without :has() for better browser compatibility) */
+.section .cert-grid {
+  margin-bottom: 40px;
+}
+.section .cert-grid:last-child {
+  margin-bottom: 0;
+}
+
+/* If the certifications page grid feels tight at the bottom, increase section spacing */
+.section:has(.cert-grid) {
+  padding-bottom: 80px;
+}
+
+/* Fallback for browsers without :has() (safe) */
+@supports not selector(:has(*)) {
+  /* target the normal certifications layout: hero then a section with cert grid */
+  .section {
+    padding-bottom: 64px;
+  }
+  /* but keep CTA sections as-is */
+  .section.cta {
+    padding-bottom: 64px;
+  }
+}
