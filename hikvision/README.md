@@ -34,4 +34,4 @@ The "HIKVISION BY ANFSOLUTIONS" CTA on every page links to:
 
 ## License
 
-Internal project. HIKVISION® is a trademark of its respective owner; this site is an authorized distributor sales page.
+Internal project. HIKVISION® is a trademark of its respective owner; this site is a retailer sales page operated by ANF Solutions.
