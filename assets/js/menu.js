@@ -1,49 +1,47 @@
-// assets/js/menu.js
+// ANF SOLUTIONS — Navigation logic
+// Mobile hamburger + Products dropdown
+
 (() => {
+  // ============ MOBILE MENU ============
   const btn = document.getElementById("menuBtn");
   const menu = document.getElementById("mobileMenu");
-  if (!btn || !menu) return;
+  if (btn && menu) {
+    const openMenu = () => {
+      menu.classList.add("open");
+      menu.setAttribute("aria-hidden", "false");
+      btn.setAttribute("aria-expanded", "true");
+      btn.setAttribute("aria-label", "Close menu");
+      btn.textContent = "✕";
+      document.body.style.overflow = "hidden";
+    };
+    const closeMenu = () => {
+      menu.classList.remove("open");
+      menu.setAttribute("aria-hidden", "true");
+      btn.setAttribute("aria-expanded", "false");
+      btn.setAttribute("aria-label", "Open menu");
+      btn.textContent = "☰";
+      document.body.style.overflow = "";
+    };
 
-  function openMenu() {
-    menu.classList.add("open");
-    menu.setAttribute("aria-hidden", "false");
-    btn.setAttribute("aria-expanded", "true");
-    btn.setAttribute("aria-label", "Close menu");
-    btn.textContent = "×";
+    btn.addEventListener("click", () => {
+      const isOpen = btn.getAttribute("aria-expanded") === "true";
+      isOpen ? closeMenu() : openMenu();
+    });
+
+    menu.addEventListener("click", (e) => {
+      if (e.target.closest("a")) closeMenu();
+    });
+
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeMenu();
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) closeMenu();
+    });
   }
 
-  function closeMenu() {
-    menu.classList.remove("open");
-    menu.setAttribute("aria-hidden", "true");
-    btn.setAttribute("aria-expanded", "false");
-    btn.setAttribute("aria-label", "Open menu");
-    btn.textContent = "☰";
-  }
-
-  btn.addEventListener("click", () => {
-    const isOpen = btn.getAttribute("aria-expanded") === "true";
-    isOpen ? closeMenu() : openMenu();
-  });
-
-  // close when click any link
-  menu.addEventListener("click", (e) => {
-    const a = e.target.closest("a");
-    if (a) closeMenu();
-  });
-
-  // close on Escape
-  window.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeMenu();
-  });
-
-  // close when resizing to desktop
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 768) closeMenu();
-  });
-})();
-
-// Products dropdown — click-toggle (works on touch + desktop)
-(() => {
+  // ============ PRODUCTS DROPDOWN ============
   document.querySelectorAll(".nav-dropdown").forEach((dd) => {
     const toggle = dd.querySelector(".nav-dropdown-toggle");
     if (!toggle) return;
@@ -55,7 +53,6 @@
     });
   });
 
-  // Close any open dropdown when clicking outside
   document.addEventListener("click", (e) => {
     document.querySelectorAll(".nav-dropdown.open").forEach((dd) => {
       if (!dd.contains(e.target)) {
@@ -65,7 +62,6 @@
     });
   });
 
-  // Close on Escape
   window.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       document.querySelectorAll(".nav-dropdown.open").forEach((dd) => {

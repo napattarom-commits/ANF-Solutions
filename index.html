@@ -3,335 +3,350 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ANF SOLUTIONS Co., Ltd. | One-stop IT Services</title>
-  <meta name="description" content="ANF SOLUTIONS provides one-stop IT services: infrastructure, network, cloud, security baseline, backup/DR, monitoring, and IT support." />
-  <link rel="stylesheet" href="assets/css/style.css?v=2026-05-23d" />
-  <style>
-    /* Products dropdown — inline so it works even with stale CSS cache */
-    .nav-dropdown{position:relative;display:inline-block}
-    .nav-dropdown-toggle{color:var(--muted,#5f6368);font-weight:600;padding:8px 10px;border-radius:999px;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:4px;text-decoration:none}
-    .nav-dropdown-toggle:hover,.nav-dropdown.open .nav-dropdown-toggle{color:var(--text,#111);background:var(--panel-soft,#f3f4f6)}
-    .nav-dropdown-toggle .caret{font-size:.7em;transition:transform .2s ease}
-    .nav-dropdown.open .caret{transform:rotate(180deg)}
-    .nav-dropdown-menu{display:none;position:absolute!important;top:calc(100% + 8px);right:0;min-width:280px;background:#fff;border:1px solid var(--line,#e5e7eb);border-radius:14px;padding:8px;box-shadow:0 16px 40px rgba(0,0,0,.12);z-index:200}
-    .nav-dropdown.open .nav-dropdown-menu{display:block;animation:ddFade .15s ease-out}
-    @keyframes ddFade{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
-    .nav-dropdown-menu a{display:block;padding:12px 14px;border-radius:10px;color:var(--text,#111);text-decoration:none}
-    .nav-dropdown-menu a:hover{background:var(--panel-soft,#f3f4f6)}
-    .nav-dropdown-menu a strong{display:block;font-weight:700;font-size:.95rem;color:var(--text,#111)}
-    .nav-dropdown-menu a span{display:block;color:var(--muted,#5f6368);font-size:.82rem;margin-top:2px}
-    @media (max-width:768px){.nav .nav-dropdown{display:none!important}}
-    /* Mobile sub-section */
-    .mobile-section{margin:6px 0;padding:8px 0;border-top:1px solid var(--line,#e5e7eb);border-bottom:1px solid var(--line,#e5e7eb)}
-    .mobile-section-title{display:block;padding:6px 14px;font-size:.72rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted,#5f6368);font-weight:700}
-    .mobile-menu a.mobile-sub{padding-left:28px;font-weight:600}
-  </style>
+  <title>ANF SOLUTIONS — Practical IT &amp; Security for Growing Businesses</title>
+  <meta name="description" content="ANF SOLUTIONS delivers end-to-end IT services: infrastructure, network, cloud, security baseline, backup/DR, and HIKVISION fire safety products in Thailand." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=2026-05-23r1" />
 </head>
-
 <body>
-  <!-- HEADER -->
-  <header class="header">
-    <a class="brand" href="index.html" aria-label="ANF SOLUTIONS Home">
-      <img src="assets/img/logo/logo.png" alt="ANF SOLUTIONS Logo" class="logo" />
-      <span class="brand-text">
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo/logo.png" alt="ANF SOLUTIONS" class="brand-logo" />
+      <div class="brand-text">
         <strong>ANF SOLUTIONS</strong>
-        <span>Co., Ltd.</span>
-      </span>
+        <span>One-stop IT Services</span>
+      </div>
     </a>
-
-    <!-- ✅ HAMBURGER (mobile) -->
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-      ☰
-    </button>
-
-    <!-- Desktop nav -->
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">☰</button>
     <nav class="nav" aria-label="Primary">
-      <a href="index.html" aria-current="page">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="services.html">Services</a>
       <div class="nav-dropdown">
         <a href="#" class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Products <span class="caret">▾</span></a>
         <div class="nav-dropdown-menu" role="menu">
           <a href="hikvision/index.html" role="menuitem">
-            <strong>HIKVISION</strong>
-            <span>Fire Safety Products by ANF Solutions</span>
+            <div class="dd-icon">HIK</div>
+            <div class="dd-text">
+              <strong>HIKVISION</strong>
+              <span>Fire Safety Products by ANF Solutions</span>
+            </div>
           </a>
         </div>
       </div>
       <a href="certifications.html">Certifications</a>
       <a href="contact.html">Contact</a>
-      <a class="btn btn-primary" href="contact.html">Contact Us</a>
+      <a class="btn btn-primary btn-sm" href="contact.html">Request Consultation</a>
     </nav>
-  </header>
-
-  <!-- ✅ Mobile menu panel -->
-  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-    <a href="index.html" aria-current="page">Home</a>
-    <a href="services.html">Services</a>
-    <div class="mobile-section">
-      <span class="mobile-section-title">Products</span>
-      <a href="hikvision/index.html" class="mobile-sub">HIKVISION — Fire Safety</a>
-    </div>
-    <a href="certifications.html">Certifications</a>
-    <a href="contact.html">Contact</a>
-    <a class="btn btn-primary" href="contact.html">Contact Us</a>
   </div>
+</header>
 
-  <main>
-    <!-- HERO -->
-    <section class="section hero">
-      <div class="container grid-2">
-        <div>
-          <p class="pill">One-stop IT Services • SMB → Enterprise</p>
-          <h1>One-stop IT Solutions for Your Business</h1>
-          <p class="lead">
-            ANF SOLUTIONS delivers end-to-end IT services—from infrastructure and network
-            to cloud, security baseline, backup/DR, and IT support—designed to be practical,
-            scalable, and easy to operate.
-          </p>
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <div class="mobile-section">
+    <span class="mobile-section-title">Products</span>
+    <a href="hikvision/index.html" class="mobile-sub">HIKVISION — Fire Safety</a>
+  </div>
+  <a href="certifications.html">Certifications</a>
+  <a href="contact.html">Contact</a>
+  <a class="btn btn-primary btn-block" href="contact.html">Request Consultation</a>
+</div>
 
-          <div class="actions">
-            <a class="btn btn-primary" href="contact.html">Request Consultation</a>
-            <a class="btn btn-ghost" href="services.html">View Services</a>
-          </div>
-
-          <div class="trust">
-            <div class="trust-item"><strong>Clear</strong><span>Scope & Deliverables</span></div>
-            <div class="trust-item"><strong>Practical</strong><span>Real-world Solutions</span></div>
-            <div class="trust-item"><strong>Flexible</strong><span>SMB to Enterprise</span></div>
-          </div>
-        </div>
-
-        <aside class="hero-card" aria-label="What we cover">
-          <h3>What we cover</h3>
-          <ul class="checklist">
-            <li>IT infrastructure design & implementation</li>
-            <li>Server, virtualization, and storage</li>
-            <li>Network, VPN, and secure connectivity</li>
-            <li>Cloud & hybrid environment setup</li>
-            <li>Security baseline & hardening</li>
-            <li>Backup, disaster recovery, and IT support</li>
-          </ul>
-          <p class="muted">Start with a short assessment and a clear action plan.</p>
-        </aside>
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div>
+      <span class="eyebrow eyebrow-on-dark">★ One-stop IT &amp; Security</span>
+      <h1>Practical IT solutions <span class="accent">engineered</span> for your business</h1>
+      <p class="lead">
+        From infrastructure and network to cloud, security baseline, backup &amp; DR, and on-site
+        support — ANF SOLUTIONS delivers end-to-end IT services with clear scope, documented
+        deliverables, and reliable operations.
+      </p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary btn-lg">Request Consultation</a>
+        <a href="services.html" class="btn btn-outline-light btn-lg">View Services</a>
       </div>
-    </section>
-
-    <!-- SERVICES SNAPSHOT -->
-    <section class="section">
-      <div class="container">
-        <h2>Our One-stop IT Services</h2>
-        <p class="muted">
-          We provide complete IT services with documentation and handover—so your team can
-          operate confidently.
-        </p>
-
-        <div class="cards">
-          <article class="card">
-            <h3>Infrastructure & Server</h3>
-            <p>Design and deploy reliable server and virtualization environments.</p>
-          </article>
-
-          <article class="card">
-            <h3>Network & Connectivity</h3>
-            <p>Secure LAN/WAN, VPN, and Wi-Fi for office and remote work.</p>
-          </article>
-
-          <article class="card">
-            <h3>Cloud & Hybrid</h3>
-            <p>Practical cloud setup with identity, access, and cost control.</p>
-          </article>
-
-          <article class="card">
-            <h3>Security Baseline</h3>
-            <p>Hardening and access control to reduce risk without complexity.</p>
-          </article>
-
-          <article class="card">
-            <h3>Backup & Disaster Recovery</h3>
-            <p>Backup strategies that are tested, documented, and recoverable.</p>
-          </article>
-
-          <article class="card">
-            <h3>Monitoring & IT Support</h3>
-            <p>Visibility, incident response, maintenance, and reporting.</p>
-          </article>
-        </div>
-
-        <div class="inline-cta">
-          <a class="btn btn-primary" href="services.html">Explore all services</a>
-          <a class="btn btn-ghost" href="contact.html">Talk to us</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- HIKVISION FEATURE -->
-    <section class="section hik-feature">
-      <style>
-        .hik-feature{
-          background:linear-gradient(135deg,#0f0f0f 0%,#1a1a1a 55%,#3a0a13 100%);
-          color:#fff;
-          position:relative;
-          overflow:hidden;
-        }
-        .hik-feature::before{
-          content:"";
-          position:absolute;inset:0;
-          background:radial-gradient(circle at 85% 20%,rgba(200,16,46,.25),transparent 55%);
-          pointer-events:none;
-        }
-        .hik-inner{position:relative;display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:center}
-        .hik-eyebrow{display:inline-block;background:#c8102e;color:#fff;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;padding:5px 12px;border-radius:4px;margin-bottom:18px}
-        .hik-feature h2{font-size:clamp(28px,4vw,42px);font-weight:800;line-height:1.15;margin:0 0 14px;color:#fff}
-        .hik-feature h2 .accent{color:#ff4257}
-        .hik-feature .lead{color:#d4d4d4;font-size:17px;line-height:1.65;margin-bottom:24px;max-width:560px}
-        .hik-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
-        .hik-chip{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:600}
-        .hik-actions{display:flex;gap:12px;flex-wrap:wrap}
-        .hik-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:8px;font-weight:700;font-size:14px;letter-spacing:.3px;text-decoration:none;border:2px solid transparent;transition:all .2s ease}
-        .hik-btn-primary{background:#c8102e;color:#fff;border-color:#c8102e}
-        .hik-btn-primary:hover{background:#a30c25;border-color:#a30c25}
-        .hik-btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
-        .hik-btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
-        .hik-visual{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:28px;backdrop-filter:blur(4px)}
-        .hik-visual h3{color:#ff4257;font-size:12px;letter-spacing:2px;text-transform:uppercase;margin:0 0 16px;font-weight:700}
-        .hik-cats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-        .hik-cat{background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.08);padding:14px;border-radius:10px;transition:all .2s ease}
-        .hik-cat:hover{border-color:#c8102e;background:rgba(200,16,46,.12)}
-        .hik-cat strong{display:block;color:#fff;font-size:14px;font-weight:700;margin-bottom:4px}
-        .hik-cat span{color:#a8a8a8;font-size:12px;line-height:1.45}
-        .hik-stats{display:flex;gap:24px;margin-top:22px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1)}
-        .hik-stat strong{display:block;color:#ff4257;font-size:22px;font-weight:800;line-height:1}
-        .hik-stat span{display:block;color:#a8a8a8;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-top:6px}
-        @media (max-width:880px){
-          .hik-inner{grid-template-columns:1fr;gap:32px}
-          .hik-cats{grid-template-columns:1fr}
-        }
-      </style>
-      <div class="container hik-inner">
-        <div>
-          <span class="hik-eyebrow">★ New Product Line • HIKVISION Retailer</span>
-          <h2>Now offering <span class="accent">HIKVISION</span><br>Fire Safety Products</h2>
-          <p class="lead">
-            We're expanding beyond IT services. ANF SOLUTIONS is now a HIKVISION
-            fire safety retailer in Thailand — supplying intelligent fire detection,
-            wireless fire alarm systems and AI-enabled fire detection cameras for your projects.
-          </p>
-          <div class="hik-chips">
-            <span class="hik-chip">Conventional Fire Alarm</span>
-            <span class="hik-chip">Fusion Camera</span>
-            <span class="hik-chip">LoRa Wireless</span>
-            <span class="hik-chip">Standalone Detectors</span>
-            <span class="hik-chip">Fire Alarm Cable</span>
-          </div>
-          <div class="hik-actions">
-            <a class="hik-btn hik-btn-primary" href="hikvision/index.html">Explore HIKVISION Products →</a>
-            <a class="hik-btn hik-btn-ghost" href="contact.html">Request Project Quote</a>
-          </div>
-        </div>
-
-        <aside class="hik-visual">
-          <h3>What's in the catalogue</h3>
-          <div class="hik-cats">
-            <a class="hik-cat" href="hikvision/products.html#conventional" style="text-decoration:none">
-              <strong>Conventional</strong>
-              <span>FACP, smoke/heat detectors, MCP, bells</span>
-            </a>
-            <a class="hik-cat" href="hikvision/products.html#fusion-camera" style="text-decoration:none">
-              <strong>Fusion Camera</strong>
-              <span>AI heat &amp; flame detection cameras</span>
-            </a>
-            <a class="hik-cat" href="hikvision/products.html#lora" style="text-decoration:none">
-              <strong>LoRa Wireless</strong>
-              <span>Gateway + wireless detectors</span>
-            </a>
-            <a class="hik-cat" href="hikvision/products.html#standalone" style="text-decoration:none">
-              <strong>Standalone</strong>
-              <span>Smoke, Wi-Fi, CO &amp; gas alarms</span>
-            </a>
-          </div>
-          <div class="hik-stats">
-            <div class="hik-stat">
-              <strong>5</strong>
-              <span>Product Categories</span>
-            </div>
-            <div class="hik-stat">
-              <strong>30+</strong>
-              <span>SKUs Available</span>
-            </div>
-            <div class="hik-stat">
-              <strong>24h</strong>
-              <span>Quote Response</span>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <!-- CERTIFICATIONS PREVIEW -->
-    <section class="section alt">
-      <div class="container">
-        <div class="row">
-          <div>
-            <h2>Certifications</h2>
-            <p class="muted">Professional credentials supporting our delivery standards.</p>
-          </div>
-          <a class="btn btn-ghost" href="certifications.html">View all</a>
-        </div>
-
-        <div class="cert-grid">
-          <img src="assets/img/cert/cert_1.png" alt="Certification 1" />
-          <img src="assets/img/cert/cert_2.png" alt="Certification 2" />
-          <img src="assets/img/cert/cert_3.png" alt="Certification 3" />
-          <img src="assets/img/cert/cert_4.png" alt="Certification 4" />
-          <img src="assets/img/cert/cert_5.png" alt="Certification 5" />
-          <img src="assets/img/cert/cert_6.png" alt="Certification 6" />
-          <img src="assets/img/cert/cert_7.png" alt="Certification 7" />
-          <img src="assets/img/cert/cert_8.png" alt="Certification 8" />
-        </div>
-      </div>
-    </section>
-
-    <!-- FINAL CTA -->
-    <section class="section cta">
-      <div class="container cta-inner">
-        <div>
-          <h2>Need a reliable IT partner?</h2>
-          <p class="muted">
-            Share your current environment and goals—ANF SOLUTIONS will recommend
-            a practical next step.
-          </p>
-        </div>
-        <a class="btn btn-primary" href="contact.html">Contact Us</a>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <strong>ANF SOLUTIONS Co., Ltd.</strong>
-        <p class="muted">One-stop IT Services</p>
-      </div>
-      <div>
-        <strong>Contact</strong>
-        <p class="muted">
-          Email: ANFSOLUTIONS.TH@GMAIL.COM<br />
-          Phone: 0804959965
-        </p>
-      </div>
-      <div>
-        <strong>Links</strong>
-        <p class="muted">
-          <a href="services.html">Services</a><br />
-          <a href="certifications.html">Certifications</a><br />
-          <a href="contact.html">Contact</a>
-        </p>
+      <div class="hero-trust">
+        <div class="hero-trust-item"><strong>8+ yrs</strong><span>IT &amp; Security experience</span></div>
+        <div class="hero-trust-item"><strong>50+</strong><span>Projects delivered</span></div>
+        <div class="hero-trust-item"><strong>24 hr</strong><span>Response SLA</span></div>
+        <div class="hero-trust-item"><strong>SMB → Enterprise</strong><span>Scale we cover</span></div>
       </div>
     </div>
-  </footer>
 
-  <!-- ✅ hamburger logic -->
-  <script src="assets/js/menu.js?v=2026-05-23d"></script>
+    <aside class="hero-card">
+      <h4>★ What we cover</h4>
+      <ul>
+        <li>IT infrastructure design &amp; implementation</li>
+        <li>Server, virtualization, and storage</li>
+        <li>Network, VPN, and secure connectivity</li>
+        <li>Cloud &amp; hybrid environment setup</li>
+        <li>Security baseline &amp; hardening</li>
+        <li>Backup, disaster recovery, IT support</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ TRUST BAR (under hero) ============ -->
+<section class="trust-bar">
+  <div class="container trust-bar-inner">
+    <div class="trust-stat"><strong>Clear</strong><span>SCOPE &amp; DELIVERABLES</span></div>
+    <div class="trust-stat"><strong>Practical</strong><span>REAL-WORLD SOLUTIONS</span></div>
+    <div class="trust-stat"><strong>Documented</strong><span>HANDOVER &amp; RUNBOOKS</span></div>
+    <div class="trust-stat"><strong>Flexible</strong><span>REMOTE &amp; ON-SITE</span></div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Services</span>
+      <h2>Complete IT services, with documentation and handover</h2>
+      <p class="lead">We design and deploy reliable IT environments — and we make sure your team can operate them confidently after we leave.</p>
+    </div>
+
+    <div class="card-grid card-grid-3">
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="6" rx="1"/><rect x="2" y="15" width="20" height="6" rx="1"/><path d="M6 7h.01M6 19h.01"/></svg>
+        </div>
+        <h3>Infrastructure &amp; Server</h3>
+        <p>Design and deploy reliable server, virtualization, and storage environments with documented baselines.</p>
+        <a href="services.html#infrastructure" class="card-link">Learn more</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3>Network &amp; Connectivity</h3>
+        <p>Secure LAN/WAN, VPN, and Wi-Fi for office and remote work. From small offices to multi-site WAN.</p>
+        <a href="services.html#network" class="card-link">Learn more</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 1 0 0-9c-.42 0-.82.06-1.21.17A6 6 0 0 0 6 9.5a5.5 5.5 0 0 0 .5 10.95"/><path d="M6 17.5h11.5"/></svg>
+        </div>
+        <h3>Cloud &amp; Hybrid</h3>
+        <p>Practical cloud setup with identity, access, cost control, and clear migration path from on-prem.</p>
+        <a href="services.html#cloud" class="card-link">Learn more</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Security Baseline</h3>
+        <p>Hardening, identity, and access control to reduce risk without adding complexity for your team.</p>
+        <a href="services.html#security" class="card-link">Learn more</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5M3 12a9 3 0 0 0 18 0"/></svg>
+        </div>
+        <h3>Backup &amp; DR</h3>
+        <p>Backup strategies that are tested, documented, and recoverable — not just configured.</p>
+        <a href="services.html#backup" class="card-link">Learn more</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg>
+        </div>
+        <h3>Monitoring &amp; Support</h3>
+        <p>Visibility, incident response, scheduled maintenance, and clear monthly reporting.</p>
+        <a href="services.html#monitoring" class="card-link">Learn more</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ METHODOLOGY ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">How we work</span>
+      <h2>A disciplined delivery process — from assessment to operations</h2>
+    </div>
+
+    <div class="method">
+      <div class="method-step">
+        <div class="method-num">1</div>
+        <h3>Assess</h3>
+        <p>Site survey, environment review, requirement gathering, and clear scope of work.</p>
+      </div>
+      <div class="method-step">
+        <div class="method-num">2</div>
+        <h3>Design</h3>
+        <p>Architecture, BOM/BOQ, drawings, and a documented design you can review and approve.</p>
+      </div>
+      <div class="method-step">
+        <div class="method-num">3</div>
+        <h3>Deliver</h3>
+        <p>Installation, configuration, testing &amp; commissioning, training, and handover.</p>
+      </div>
+      <div class="method-step">
+        <div class="method-num">4</div>
+        <h3>Operate</h3>
+        <p>Maintenance, monitoring, incident response, and periodic health reviews.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HIKVISION FEATURE ============ -->
+<section class="section hik-feature">
+  <div class="container hik-inner">
+    <div>
+      <span class="hik-eyebrow">★ New Product Line • HIKVISION Retailer</span>
+      <h2>Now offering <span class="accent">HIKVISION</span> fire safety products</h2>
+      <p class="lead">
+        We're expanding beyond IT services. ANF SOLUTIONS is now a HIKVISION fire safety retailer in
+        Thailand — supplying intelligent fire detection, wireless fire alarm systems, and AI-enabled
+        fire detection cameras for your projects.
+      </p>
+      <div class="hik-chips">
+        <span class="hik-chip">Conventional Fire Alarm</span>
+        <span class="hik-chip">Fusion Camera</span>
+        <span class="hik-chip">LoRa Wireless</span>
+        <span class="hik-chip">Standalone Detectors</span>
+        <span class="hik-chip">Fire Alarm Cable</span>
+      </div>
+      <div class="hero-actions">
+        <a href="hikvision/index.html" class="btn hik-btn-red">Explore HIKVISION Products →</a>
+        <a href="contact.html" class="btn btn-outline-light">Request Project Quote</a>
+      </div>
+    </div>
+
+    <aside class="hik-card">
+      <h4>★ What's in the catalogue</h4>
+      <div class="hik-cats">
+        <a class="hik-cat" href="hikvision/products.html#conventional">
+          <strong>Conventional</strong>
+          <span>FACP, smoke/heat detectors, MCP, bells</span>
+        </a>
+        <a class="hik-cat" href="hikvision/products.html#fusion-camera">
+          <strong>Fusion Camera</strong>
+          <span>AI heat &amp; flame detection cameras</span>
+        </a>
+        <a class="hik-cat" href="hikvision/products.html#lora">
+          <strong>LoRa Wireless</strong>
+          <span>Gateway + wireless detectors</span>
+        </a>
+        <a class="hik-cat" href="hikvision/products.html#standalone">
+          <strong>Standalone</strong>
+          <span>Smoke, Wi-Fi, CO &amp; gas alarms</span>
+        </a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Credentials</span>
+      <h2>Certifications supporting our delivery standards</h2>
+      <p class="lead">Recognized credentials that back the quality and discipline of every engagement.</p>
+    </div>
+
+    <div class="cert-grid">
+      <img src="assets/img/cert/cert_1.png" alt="Certification 1" />
+      <img src="assets/img/cert/cert_2.png" alt="Certification 2" />
+      <img src="assets/img/cert/cert_3.png" alt="Certification 3" />
+      <img src="assets/img/cert/cert_4.png" alt="Certification 4" />
+      <img src="assets/img/cert/cert_5.png" alt="Certification 5" />
+      <img src="assets/img/cert/cert_6.png" alt="Certification 6" />
+      <img src="assets/img/cert/cert_7.png" alt="Certification 7" />
+      <img src="assets/img/cert/cert_8.png" alt="Certification 8" />
+    </div>
+
+    <div style="text-align:center; margin-top:36px;">
+      <a href="certifications.html" class="btn btn-ghost">View all credentials</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="section section-sm">
+  <div class="container">
+    <div class="cta-banner">
+      <div>
+        <h2>Need a reliable IT partner?</h2>
+        <p>Share your environment and goals — we'll respond within 24 hours with a practical next step.</p>
+      </div>
+      <div class="cta-banner-actions">
+        <a href="contact.html" class="btn btn-white btn-lg">Request Consultation</a>
+        <a href="mailto:ANFSOLUTIONS.TH@GMAIL.COM" class="btn btn-outline-light btn-lg">Email Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="assets/img/logo/logo.png" alt="ANF SOLUTIONS" class="brand-logo" />
+          <div class="brand-text">
+            <strong>ANF SOLUTIONS</strong>
+            <span>Co., Ltd.</span>
+          </div>
+        </a>
+        <p class="footer-tagline">One-stop IT services and HIKVISION fire safety retailer serving Thailand — remote and on-site.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html#infrastructure">Infrastructure</a></li>
+          <li><a href="services.html#network">Network</a></li>
+          <li><a href="services.html#cloud">Cloud &amp; Hybrid</a></li>
+          <li><a href="services.html#security">Security Baseline</a></li>
+          <li><a href="services.html#backup">Backup &amp; DR</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Products</h5>
+        <ul>
+          <li><a href="hikvision/index.html">HIKVISION Fire Safety</a></li>
+          <li><a href="hikvision/products.html">Product Catalogue</a></li>
+          <li><a href="hikvision/contact.html">Project Pricing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mailto:ANFSOLUTIONS.TH@GMAIL.COM">ANFSOLUTIONS.TH@GMAIL.COM</a></li>
+          <li><a href="tel:0804959965">0804959965</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 ANF SOLUTIONS Co., Ltd. All rights reserved.</div>
+      <div>Bangkok, Thailand · Remote &amp; On-site</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/menu.js?v=2026-05-23r1"></script>
 </body>
 </html>

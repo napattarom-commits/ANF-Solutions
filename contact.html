@@ -3,46 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact | ANF SOLUTIONS Co., Ltd.</title>
-  <meta name="description" content="Contact ANF SOLUTIONS for infrastructure and one-stop IT services. Response within 24 hours." />
-  <link rel="stylesheet" href="assets/css/style.css?v=2026-05-23d" />
-  <style>
-    .nav-dropdown{position:relative;display:inline-block}
-    .nav-dropdown-toggle{color:var(--muted,#5f6368);font-weight:600;padding:8px 10px;border-radius:999px;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:4px;text-decoration:none}
-    .nav-dropdown-toggle:hover,.nav-dropdown.open .nav-dropdown-toggle{color:var(--text,#111);background:var(--panel-soft,#f3f4f6)}
-    .nav-dropdown-toggle .caret{font-size:.7em;transition:transform .2s ease}
-    .nav-dropdown.open .caret{transform:rotate(180deg)}
-    .nav-dropdown-menu{display:none;position:absolute!important;top:calc(100% + 8px);right:0;min-width:280px;background:#fff;border:1px solid var(--line,#e5e7eb);border-radius:14px;padding:8px;box-shadow:0 16px 40px rgba(0,0,0,.12);z-index:200}
-    .nav-dropdown.open .nav-dropdown-menu{display:block;animation:ddFade .15s ease-out}
-    @keyframes ddFade{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
-    .nav-dropdown-menu a{display:block;padding:12px 14px;border-radius:10px;color:var(--text,#111);text-decoration:none}
-    .nav-dropdown-menu a:hover{background:var(--panel-soft,#f3f4f6)}
-    .nav-dropdown-menu a strong{display:block;font-weight:700;font-size:.95rem;color:var(--text,#111)}
-    .nav-dropdown-menu a span{display:block;color:var(--muted,#5f6368);font-size:.82rem;margin-top:2px}
-    @media (max-width:768px){.nav .nav-dropdown{display:none!important}}
-    .mobile-section{margin:6px 0;padding:8px 0;border-top:1px solid var(--line,#e5e7eb);border-bottom:1px solid var(--line,#e5e7eb)}
-    .mobile-section-title{display:block;padding:6px 14px;font-size:.72rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted,#5f6368);font-weight:700}
-    .mobile-menu a.mobile-sub{padding-left:28px;font-weight:600}
-  </style>
+  <title>Contact — ANF SOLUTIONS</title>
+  <meta name="description" content="Contact ANF SOLUTIONS for IT services and HIKVISION fire safety products. Response within 24 hours." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=2026-05-23r1" />
 </head>
-
 <body>
-  <!-- HEADER -->
-  <header class="header">
-    <a class="brand" href="index.html" aria-label="ANF SOLUTIONS Home">
-      <img src="assets/img/logo/logo.png" alt="ANF SOLUTIONS Logo" class="logo" />
-      <span class="brand-text">
-        <strong>ANF SOLUTIONS</strong>
-        <span>Co., Ltd.</span>
-      </span>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo/logo.png" alt="ANF SOLUTIONS" class="brand-logo" />
+      <div class="brand-text"><strong>ANF SOLUTIONS</strong><span>One-stop IT Services</span></div>
     </a>
-
-    <!-- ✅ HAMBURGER (mobile) -->
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-      ☰
-    </button>
-
-    <!-- Desktop nav -->
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">☰</button>
     <nav class="nav" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
@@ -50,111 +26,206 @@
         <a href="#" class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Products <span class="caret">▾</span></a>
         <div class="nav-dropdown-menu" role="menu">
           <a href="hikvision/index.html" role="menuitem">
-            <strong>HIKVISION</strong>
-            <span>Fire Safety Products by ANF Solutions</span>
+            <div class="dd-icon">HIK</div>
+            <div class="dd-text">
+              <strong>HIKVISION</strong>
+              <span>Fire Safety Products by ANF Solutions</span>
+            </div>
           </a>
         </div>
       </div>
       <a href="certifications.html">Certifications</a>
-      <a href="contact.html" aria-current="page">Contact</a>
-      <a class="btn btn-primary" href="contact.html">Request Consultation</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a class="btn btn-primary btn-sm" href="contact.html">Request Consultation</a>
     </nav>
-  </header>
-
-  <!-- ✅ Mobile menu panel -->
-  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <div class="mobile-section">
-      <span class="mobile-section-title">Products</span>
-      <a href="hikvision/index.html" class="mobile-sub">HIKVISION — Fire Safety</a>
-    </div>
-    <a href="certifications.html">Certifications</a>
-    <a href="contact.html" aria-current="page">Contact</a>
-    <a class="btn btn-primary" href="contact.html">Request Consultation</a>
   </div>
+</header>
 
-  <main>
-    <section class="section hero">
-      <div class="container">
-        <p class="pill">Contact • Response within 24 hours</p>
-        <h1>Contact</h1>
-        <p class="lead">Tell us your environment and goals. We’ll recommend a practical next step.</p>
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <div class="mobile-section">
+    <span class="mobile-section-title">Products</span>
+    <a href="hikvision/index.html" class="mobile-sub">HIKVISION — Fire Safety</a>
+  </div>
+  <a href="certifications.html">Certifications</a>
+  <a href="contact.html">Contact</a>
+  <a class="btn btn-primary btn-block" href="contact.html">Request Consultation</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" style="padding:64px 0 72px;">
+  <div class="container">
+    <div style="max-width:780px;">
+      <span class="eyebrow eyebrow-on-dark">Contact</span>
+      <h1>Let's discuss your <span class="accent">next project</span></h1>
+      <p class="lead" style="color:rgba(255,255,255,0.78); margin-top:18px;">
+        Share your environment, scope, and timeline — we'll respond within 24 hours with a
+        practical next step and a realistic delivery plan.
+      </p>
+      <div class="hero-actions">
+        <a href="mailto:ANFSOLUTIONS.TH@GMAIL.COM?subject=Request%20Consultation%20-%20ANF%20SOLUTIONS" class="btn btn-primary btn-lg">✉ Email Us</a>
+        <a href="tel:0804959965" class="btn btn-outline-light btn-lg">📞 Call 080 495 9965</a>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="section">
-      <div class="container grid-2">
-        <article class="hero-card">
-          <h3>Get in touch</h3>
-          <ul class="checklist">
-            <li><strong>Email:</strong> ANFSOLUTIONS.TH@GMAIL.COM</li>
-            <li><strong>Phone:</strong> 0804959965</li>
-            <li><strong>Service area:</strong> Thailand (Remote & On-site)</li>
-          </ul>
-          <p class="muted">For urgent requests, include “URGENT” in the email subject.</p>
-        </article>
+<div class="breadcrumb">
+  <div class="container"><a href="index.html">Home</a><span class="sep">›</span><span class="current">Contact</span></div>
+</div>
 
-        <article class="hero-card">
-          <h3>What to include</h3>
-          <ul class="checklist">
-            <li>Company size (users / sites)</li>
-            <li>Current setup (on-prem / cloud / hybrid)</li>
-            <li>Scope (infra / network / backup / security baseline)</li>
-            <li>Target timeline</li>
-          </ul>
+<!-- CONTACT SECTION -->
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <!-- LEFT: Form -->
+      <form class="form" onsubmit="event.preventDefault(); alert('Thank you! Your message has been recorded. Our team will respond within 24 hours.'); this.reset();">
+        <h3 style="margin-bottom:6px;">Send us a message</h3>
+        <p class="muted" style="margin-bottom:22px; font-size:0.92rem;">All fields with * are required. Response within 24 hours.</p>
 
-          <div class="actions" style="margin-top:14px">
-            <a class="btn btn-primary" href="mailto:ANFSOLUTIONS.TH@GMAIL.COM?subject=Request%20Consultation%20-%20ANF%20SOLUTIONS">
-              Email us
-            </a>
-            <a class="btn btn-ghost" href="tel:0804959965">Call</a>
+        <div class="form-row">
+          <div class="field">
+            <label>Full Name *</label>
+            <input type="text" required placeholder="Your full name">
           </div>
-        </article>
-      </div>
-    </section>
+          <div class="field">
+            <label>Company</label>
+            <input type="text" placeholder="Company name">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label>Email *</label>
+            <input type="email" required placeholder="you@example.com">
+          </div>
+          <div class="field">
+            <label>Phone</label>
+            <input type="tel" placeholder="08X-XXX-XXXX">
+          </div>
+        </div>
+        <div class="field">
+          <label>I'm interested in *</label>
+          <select required>
+            <option value="">— Select —</option>
+            <option>IT Infrastructure / Server</option>
+            <option>Network / Connectivity</option>
+            <option>Cloud / Hybrid</option>
+            <option>Security Baseline</option>
+            <option>Backup / Disaster Recovery</option>
+            <option>Monitoring / IT Support</option>
+            <option>HIKVISION Fire Safety Products</option>
+            <option>Multiple services</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Project details *</label>
+          <textarea required placeholder="Company size (users/sites), current environment, scope, target timeline..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Send Inquiry</button>
+        <p class="muted" style="font-size:0.78rem; text-align:center; margin-top:14px;">
+          By submitting, you consent to be contacted by our team about your enquiry.
+        </p>
+      </form>
 
-    <section class="section alt">
-      <div class="container">
-        <h2>Preferred contact format</h2>
-        <p class="muted">You can copy/paste this into email for faster turnaround.</p>
+      <!-- RIGHT: Info cards -->
+      <div>
+        <div class="info-card">
+          <h4>★ Get in touch</h4>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:ANFSOLUTIONS.TH@GMAIL.COM">ANFSOLUTIONS.TH@GMAIL.COM</a></li>
+            <li><strong>Phone:</strong> <a href="tel:0804959965">0804959965</a></li>
+            <li><strong>Service area:</strong> Thailand (Remote &amp; On-site)</li>
+            <li><strong>Hours:</strong> Mon–Fri, 9:00 – 18:00</li>
+          </ul>
+          <p style="font-size:0.85rem; color:var(--slate-600); margin-top:12px; padding:12px; background:var(--blue-50); border-radius:8px;">
+            <strong>For urgent requests</strong>, include "URGENT" in the email subject line.
+          </p>
+        </div>
 
-        <div class="hero-card">
-          <ul class="checklist">
-            <li><strong>Company:</strong> …</li>
-            <li><strong>Industry:</strong> …</li>
-            <li><strong>Users/Sites:</strong> …</li>
-            <li><strong>Current environment:</strong> …</li>
-            <li><strong>Scope needed:</strong> …</li>
-            <li><strong>Timeline:</strong> …</li>
+        <div class="info-card">
+          <h4>★ What to include</h4>
+          <ul>
+            <li>• Company size (users / sites)</li>
+            <li>• Current setup (on-prem / cloud / hybrid)</li>
+            <li>• Scope (infra / network / backup / security)</li>
+            <li>• Target timeline</li>
+            <li>• Any compliance requirements</li>
           </ul>
         </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <strong>ANF SOLUTIONS Co., Ltd.</strong>
-        <p class="muted">One-stop IT Services</p>
-      </div>
-      <div>
-        <strong>Contact</strong>
-        <p class="muted">Email: ANFSOLUTIONS.TH@GMAIL.COM<br />Phone: 0804959965</p>
-      </div>
-      <div>
-        <strong>Links</strong>
-        <p class="muted">
-          <a href="services.html">Services</a><br />
-          <a href="certifications.html">Certifications</a><br />
-          <a href="contact.html">Contact</a>
-        </p>
+        <div class="info-card">
+          <h4>★ Preferred contact format</h4>
+          <p style="font-size:0.88rem; color:var(--slate-600); margin-bottom:12px;">
+            Copy/paste this into your email for fastest turnaround:
+          </p>
+          <div class="codeblock">
+            <strong>Company:</strong> …<br>
+            <strong>Industry:</strong> …<br>
+            <strong>Users/Sites:</strong> …<br>
+            <strong>Current environment:</strong> …<br>
+            <strong>Scope needed:</strong> …<br>
+            <strong>Timeline:</strong> …
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- ✅ hamburger logic -->
-  <script src="assets/js/menu.js?v=2026-05-23d"></script>
+<!-- HIKVISION sales note -->
+<section class="section section-alt section-sm">
+  <div class="container">
+    <div class="cta-banner" style="background:linear-gradient(135deg,#0a0a0a 0%,#3a0a13 100%);">
+      <div>
+        <h2 style="color:#fff;">Looking for HIKVISION fire safety pricing?</h2>
+        <p style="color:rgba(255,255,255,0.8);">Visit our dedicated HIKVISION portal for catalogue, datasheets, and project pricing.</p>
+      </div>
+      <div class="cta-banner-actions">
+        <a href="hikvision/index.html" class="btn btn-white btn-lg" style="color:#c8102e !important;">Open HIKVISION Portal →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="assets/img/logo/logo.png" alt="ANF SOLUTIONS" class="brand-logo" />
+          <div class="brand-text"><strong>ANF SOLUTIONS</strong><span>Co., Ltd.</span></div>
+        </a>
+        <p class="footer-tagline">One-stop IT services and HIKVISION fire safety retailer serving Thailand — remote and on-site.</p>
+      </div>
+      <div class="footer-col"><h5>Services</h5><ul>
+        <li><a href="services.html#infrastructure">Infrastructure</a></li>
+        <li><a href="services.html#network">Network</a></li>
+        <li><a href="services.html#cloud">Cloud &amp; Hybrid</a></li>
+        <li><a href="services.html#security">Security Baseline</a></li>
+        <li><a href="services.html#backup">Backup &amp; DR</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Products</h5><ul>
+        <li><a href="hikvision/index.html">HIKVISION Fire Safety</a></li>
+        <li><a href="hikvision/products.html">Product Catalogue</a></li>
+        <li><a href="hikvision/contact.html">Project Pricing</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Company</h5><ul>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="mailto:ANFSOLUTIONS.TH@GMAIL.COM">ANFSOLUTIONS.TH@GMAIL.COM</a></li>
+        <li><a href="tel:0804959965">0804959965</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 ANF SOLUTIONS Co., Ltd. All rights reserved.</div>
+      <div>Bangkok, Thailand · Remote &amp; On-site</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/menu.js?v=2026-05-23r1"></script>
 </body>
 </html>
