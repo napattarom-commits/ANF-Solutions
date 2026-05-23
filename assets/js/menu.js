@@ -41,3 +41,37 @@
     if (window.innerWidth > 768) closeMenu();
   });
 })();
+
+// Products dropdown — click-toggle (works on touch + desktop)
+(() => {
+  document.querySelectorAll(".nav-dropdown").forEach((dd) => {
+    const toggle = dd.querySelector(".nav-dropdown-toggle");
+    if (!toggle) return;
+
+    toggle.addEventListener("click", (e) => {
+      e.preventDefault();
+      const isOpen = dd.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+  });
+
+  // Close any open dropdown when clicking outside
+  document.addEventListener("click", (e) => {
+    document.querySelectorAll(".nav-dropdown.open").forEach((dd) => {
+      if (!dd.contains(e.target)) {
+        dd.classList.remove("open");
+        dd.querySelector(".nav-dropdown-toggle")?.setAttribute("aria-expanded", "false");
+      }
+    });
+  });
+
+  // Close on Escape
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      document.querySelectorAll(".nav-dropdown.open").forEach((dd) => {
+        dd.classList.remove("open");
+        dd.querySelector(".nav-dropdown-toggle")?.setAttribute("aria-expanded", "false");
+      });
+    }
+  });
+})();
