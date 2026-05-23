@@ -966,6 +966,11 @@ h4 { font-size: 1.05rem; }
 /* ============ MISC ============ */
 .divider { height: 1px; background: var(--border); margin: 24px 0; }
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.split.reverse > *:first-child { grid-column: 2; }
+.split.reverse > *:last-child { grid-column: 1; grid-row: 1; }
+@media (max-width: 960px) {
+  .split.reverse > *:first-child, .split.reverse > *:last-child { grid-column: 1; grid-row: auto; }
+}
 .bullet-list { list-style: none; }
 .bullet-list li {
   padding: 9px 0 9px 28px;

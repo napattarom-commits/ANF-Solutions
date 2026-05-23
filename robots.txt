@@ -1,0 +1,12 @@
+# ANF SOLUTIONS - robots.txt
+# https://anfsolutions.co.th/
+
+User-agent: *
+Allow: /
+Disallow: /assets/img/cert/
+
+# Block common bad/AI bots if you want to (uncomment as needed)
+# User-agent: GPTBot
+# Disallow: /
+
+Sitemap: https://anfsolutions.co.th/sitemap.xml
