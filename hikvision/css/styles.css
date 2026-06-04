@@ -320,6 +320,9 @@ a:hover { color: var(--hik-red-dark); }
   overflow: hidden;
 }
 .card-img img { width: 100%; height: 100%; object-fit: cover; }
+/* Product photos: show full product on white bg without cropping */
+.card-img.product { background: linear-gradient(180deg, #f8f9fb 0%, #ffffff 100%); padding: 14px; }
+.card-img.product img { object-fit: contain; }
 .card-body {
   padding: 20px;
   flex: 1;
