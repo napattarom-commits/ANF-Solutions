@@ -139,24 +139,27 @@ body.mck-page .site-header .nav > a:hover::after,
 body.mck-page .site-header .nav > a.active::after { transform: scaleX(1); }
 body.mck-page .site-header .nav > a.active { color: var(--mck-ink); }
 
-body.mck-page .site-header .btn-primary {
-  background: var(--mck-ink);
-  color: white;
-  border: none;
-  padding: 12px 22px;
-  border-radius: 0;
-  font-family: var(--mck-sans);
-  font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 0.3px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transition: background 0.2s ease;
+body.mck-page .site-header .btn-primary,
+body.mck-page .btn.btn-primary,
+body.mck-page a.btn-primary {
+  background: var(--mck-ink) !important;
+  color: white !important;
+  border: 1.5px solid var(--mck-ink) !important;
+  padding: 12px 22px !important;
+  border-radius: 0 !important;
+  font-family: var(--mck-sans) !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  letter-spacing: 0.3px !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  transition: background 0.2s ease, border-color 0.2s ease !important;
+  box-shadow: none !important;
 }
-body.mck-page .site-header .btn-primary::after { content: "→"; font-weight: 400; }
-body.mck-page .site-header .btn-primary:hover { background: var(--mck-accent); }
+body.mck-page .btn-primary::after { content: "→"; font-weight: 400; }
+body.mck-page .btn-primary:hover { background: var(--mck-accent) !important; border-color: var(--mck-accent) !important; color: white !important; transform: none !important; }
 
 /* ===== Hero — editorial 2-col ===== */
 body.mck-page .mck-hero {
@@ -308,26 +311,28 @@ body.mck-page .mck-cap-visual .mck-cap-num {
   top: 18px;
   right: 22px;
   font-family: var(--mck-serif);
-  font-size: clamp(36px, 4vw, 52px);
-  font-weight: 600;
-  color: var(--mck-ink);
-  opacity: 0.45;
-  letter-spacing: -1.5px;
+  font-size: clamp(40px, 4.5vw, 60px);
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 14px rgba(0,0,0,0.35);
+  letter-spacing: -2px;
   line-height: 1;
   z-index: 2;
+  font-style: italic;
 }
 body.mck-page .mck-cap-visual .mck-cap-tag {
   position: absolute;
   top: 22px;
   left: 22px;
-  background: var(--mck-ink);
-  color: white;
-  padding: 6px 13px;
+  background: white;
+  color: var(--mck-ink);
+  padding: 7px 14px;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: var(--mck-track-eyebrow);
   text-transform: uppercase;
   z-index: 2;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 body.mck-page .mck-cap h3 {
   margin: 0;
