@@ -76,8 +76,9 @@
 }
   </script>
 <link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/bento.css">
 </head>
-<body>
+<body class="bento-page">
 
 <!-- ============ HEADER ============ -->
 <header class="site-header">
@@ -123,46 +124,88 @@
   <a class="btn btn-primary btn-block" href="contact.html">Request Consultation</a>
 </div>
 
-<!-- ============ HERO ============ -->
-<section class="hero hero-mesh">
-  <div class="container hero-inner">
-    <div>
-      <span class="eyebrow eyebrow-on-dark">★ One-stop IT Services for SMEs</span>
-      <h1>Consulting &amp; implementation <span class="accent">engineered</span> for Thai SMEs</h1>
-      <p class="lead">
-        From infrastructure and network to cloud, security baseline, backup &amp; DR, and on-site
-        support — ANF Solutions helps small and medium-sized businesses in Thailand run a modern,
-        reliable IT environment with clear scope and documented deliverables.
-      </p>
-      <div class="hero-actions">
-        <a href="contact.html" class="btn btn-primary btn-lg">Request Consultation</a>
-        <a href="services.html" class="btn btn-outline-light btn-lg">View Services</a>
+<!-- ============ BENTO HERO ============ -->
+<section class="bento-hero">
+  <div class="container">
+    <div class="bento-hero-grid">
+
+      <!-- Main dark hero card -->
+      <div class="bento-card dark reveal-on-scroll">
+        <div>
+          <div class="bento-eyebrow"><span class="dot"></span> Available for new projects · Bangkok &amp; remote</div>
+          <h1 class="bento-h1">
+            Your IT,<br>
+            <span class="accent">engineered</span><br>
+            for Thai SMEs.
+          </h1>
+          <p class="bento-lead">
+            Infrastructure · network · cloud · security · backup &amp; DR.
+            Documented runbooks, real handover, no black-boxes.
+            ANF Solutions builds IT environments small Thai businesses actually run on.
+          </p>
+        </div>
+        <div class="bento-actions">
+          <a href="contact.html" class="bento-btn bento-btn-primary">Request consultation →</a>
+          <a href="services.html" class="bento-btn bento-btn-ghost">View services</a>
+        </div>
       </div>
-      <div class="hero-trust">
-        <!-- TODO: replace placeholders with real numbers once available -->
-        <div class="hero-trust-item"><strong>8+ yrs</strong><span>IT &amp; Security experience</span></div>
-        <div class="hero-trust-item"><strong>50+</strong><span>Projects delivered</span></div>
-        <div class="hero-trust-item"><strong>24 hr</strong><span>Response SLA</span></div>
-        <div class="hero-trust-item"><strong>SME focused</strong><span>Right-sized scope</span></div>
+
+      <!-- Top right: stat card 1 (years experience) -->
+      <div class="bento-card stat red reveal-on-scroll">
+        <div class="stat-meta">Experience</div>
+        <div>
+          <div class="stat-num">8+</div>
+          <div class="stat-label">Years in IT &amp; Security</div>
+        </div>
       </div>
+
+      <!-- Bottom right: stat card 2 (response time) -->
+      <div class="bento-card stat amber reveal-on-scroll">
+        <div class="stat-meta">Response SLA</div>
+        <div>
+          <div class="stat-num">24h</div>
+          <div class="stat-label">Acknowledge · scope · estimate</div>
+        </div>
+      </div>
+
     </div>
 
-    <aside class="hero-card">
-      <h4>★ What we cover</h4>
-      <ul>
-        <li>IT infrastructure design &amp; implementation</li>
-        <li>Server, virtualization, and storage</li>
-        <li>Network, VPN, and secure connectivity</li>
-        <li>Cloud &amp; hybrid environment setup</li>
-        <li>Security baseline &amp; hardening</li>
-        <li>Backup, disaster recovery, IT support</li>
-      </ul>
-    </aside>
+    <!-- Stat row below hero (4 small accent cards) -->
+    <div class="bento-hero-grid" style="grid-template-columns:repeat(4,1fr); grid-template-rows:auto; margin-top:var(--bento-gap);">
+      <div class="bento-card stat green reveal-on-scroll" style="min-height:auto; padding:22px 26px;">
+        <div class="stat-meta">Delivered</div>
+        <div style="display:flex;align-items:end;justify-content:space-between;gap:8px;">
+          <div><div class="stat-num" style="font-size:36px;">50+</div><div class="stat-label">Projects</div></div>
+          <div style="font-size:24px;">📊</div>
+        </div>
+      </div>
+      <div class="bento-card stat blue reveal-on-scroll" style="min-height:auto; padding:22px 26px;">
+        <div class="stat-meta">Scope</div>
+        <div style="display:flex;align-items:end;justify-content:space-between;gap:8px;">
+          <div><div class="stat-num" style="font-size:36px;">Clear</div><div class="stat-label">Deliverables</div></div>
+          <div style="font-size:24px;">📋</div>
+        </div>
+      </div>
+      <div class="bento-card stat purple reveal-on-scroll" style="min-height:auto; padding:22px 26px;">
+        <div class="stat-meta">Handover</div>
+        <div style="display:flex;align-items:end;justify-content:space-between;gap:8px;">
+          <div><div class="stat-num" style="font-size:36px;">Docs</div><div class="stat-label">+ runbooks</div></div>
+          <div style="font-size:24px;">📁</div>
+        </div>
+      </div>
+      <div class="bento-card stat pink reveal-on-scroll" style="min-height:auto; padding:22px 26px;">
+        <div class="stat-meta">Delivery</div>
+        <div style="display:flex;align-items:end;justify-content:space-between;gap:8px;">
+          <div><div class="stat-num" style="font-size:36px;">Hybrid</div><div class="stat-label">Remote + on-site</div></div>
+          <div style="font-size:24px;">🌐</div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ============ TRUST BAR (under hero) ============ -->
-<section class="trust-bar reveal-on-scroll stagger">
+<!-- legacy trust bar hidden — replaced by Bento hero -->
+<section class="trust-bar legacy-hide">
   <div class="container trust-bar-inner">
     <div class="trust-stat"><strong>Clear</strong><span>SCOPE &amp; DELIVERABLES</span></div>
     <div class="trust-stat"><strong>Practical</strong><span>REAL-WORLD SOLUTIONS</span></div>
@@ -171,164 +214,157 @@
   </div>
 </section>
 
-<!-- ============ SERVICES ============ -->
-<section class="section reveal-on-scroll">
+<!-- ============ SERVICES — Bento layout ============ -->
+<section class="bento-section reveal-on-scroll">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Services</span>
-      <h2>Complete IT services, with documentation and handover</h2>
-      <p class="lead">We design and deploy reliable IT environments — and we make sure your team can operate them confidently after we leave.</p>
+    <div class="bento-section-head">
+      <div>
+        <span class="eyebrow">What we do</span>
+        <h2>Six services. One team. Documented handover.</h2>
+      </div>
+      <a href="services.html" class="head-link">See all services →</a>
     </div>
 
-    <div class="card-grid card-grid-3">
-      <article class="card">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="6" rx="1"/><rect x="2" y="15" width="20" height="6" rx="1"/><path d="M6 7h.01M6 19h.01"/></svg>
-        </div>
+    <div class="bento-services">
+
+      <!-- Featured service (span 2 rows, dark card) -->
+      <article class="svc featured">
+        <div class="svc-icon">🛡️</div>
+        <h3>Security Baseline &amp; Hardening</h3>
+        <p>Identity, access control, hardening for endpoints, servers and cloud. Reduce risk without adding day-to-day friction for your team.</p>
+        <a href="services.html#security" class="svc-link">Learn more</a>
+      </article>
+
+      <!-- Regular services -->
+      <article class="svc">
+        <div class="svc-icon">🖥️</div>
         <h3>Infrastructure &amp; Server</h3>
-        <p>Design and deploy reliable server, virtualization, and storage environments with documented baselines.</p>
-        <a href="services.html#infrastructure" class="card-link">Learn more</a>
+        <p>Server, virtualization, storage — designed with documented baselines.</p>
+        <a href="services.html#infrastructure" class="svc-link">Learn more</a>
       </article>
 
-      <article class="card">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        </div>
+      <article class="svc">
+        <div class="svc-icon">🌐</div>
         <h3>Network &amp; Connectivity</h3>
-        <p>Secure LAN/WAN, VPN, and Wi-Fi for office and remote work. From small offices to multi-site WAN.</p>
-        <a href="services.html#network" class="card-link">Learn more</a>
+        <p>LAN, WAN, VPN, Wi-Fi — small office to multi-site.</p>
+        <a href="services.html#network" class="svc-link">Learn more</a>
       </article>
 
-      <article class="card">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 1 0 0-9c-.42 0-.82.06-1.21.17A6 6 0 0 0 6 9.5a5.5 5.5 0 0 0 .5 10.95"/><path d="M6 17.5h11.5"/></svg>
-        </div>
+      <article class="svc">
+        <div class="svc-icon">☁️</div>
         <h3>Cloud &amp; Hybrid</h3>
-        <p>Practical cloud setup with identity, access, cost control, and clear migration path from on-prem.</p>
-        <a href="services.html#cloud" class="card-link">Learn more</a>
+        <p>Practical cloud setup. Identity, access, cost control.</p>
+        <a href="services.html#cloud" class="svc-link">Learn more</a>
       </article>
 
-      <article class="card">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <h3>Security Baseline</h3>
-        <p>Hardening, identity, and access control to reduce risk without adding complexity for your team.</p>
-        <a href="services.html#security" class="card-link">Learn more</a>
+      <article class="svc">
+        <div class="svc-icon">🗄️</div>
+        <h3>Backup &amp; Disaster Recovery</h3>
+        <p>Tested, documented, recoverable — not just configured.</p>
+        <a href="services.html#backup" class="svc-link">Learn more</a>
       </article>
 
-      <article class="card">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5M3 12a9 3 0 0 0 18 0"/></svg>
-        </div>
-        <h3>Backup &amp; DR</h3>
-        <p>Backup strategies that are tested, documented, and recoverable — not just configured.</p>
-        <a href="services.html#backup" class="card-link">Learn more</a>
-      </article>
-
-      <article class="card">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg>
-        </div>
+      <article class="svc span-2">
+        <div class="svc-icon">📊</div>
         <h3>Monitoring &amp; Support</h3>
-        <p>Visibility, incident response, scheduled maintenance, and clear monthly reporting.</p>
-        <a href="services.html#monitoring" class="card-link">Learn more</a>
+        <p>Visibility, incident response, scheduled maintenance, monthly reporting. Hybrid remote + on-site. We become the IT operator you wish you had on staff.</p>
+        <a href="services.html#monitoring" class="svc-link">Learn more</a>
       </article>
+
     </div>
   </div>
 </section>
 
-<!-- ============ RECENT WORK (anonymized) ============ -->
-<section class="section section-alt reveal-on-scroll">
+<!-- ============ RECENT WORK — Bento ============ -->
+<section class="bento-section reveal-on-scroll">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Recent work</span>
-      <h2>Anonymized snapshots of recent engagements</h2>
-      <p class="lead">Client names are kept confidential. Scope, scale, and outcome highlighted.</p>
+    <div class="bento-section-head">
+      <div>
+        <span class="eyebrow">Recent work</span>
+        <h2>Real projects. Anonymized snapshots.</h2>
+      </div>
+      <a href="contact.html" class="head-link">Start yours →</a>
     </div>
 
-    <div class="card-grid card-grid-3">
-      <article class="card">
-        <span class="tag">Healthcare clinic · Bangkok</span>
-        <h3 style="margin-top:14px;">Wireless fire alarm — full building coverage</h3>
-        <p style="margin-top:10px;">8-zone LoRa-based fire alarm system: smoke + heat detectors, manual call points, sounder strobes, LoRa gateway, fire workstation. Designed for minimal disruption to clinic operations during install.</p>
-        <div class="divider"></div>
-        <p style="font-size:.85rem; color:var(--slate-500);">42 wireless devices · CCCF certified · Site survey + commissioning</p>
+    <div class="bento-recent">
+      <article class="work">
+        <span class="work-tag red">Healthcare clinic · Bangkok</span>
+        <h3>Wireless fire alarm — full building coverage</h3>
+        <p>8-zone LoRa fire alarm system: smoke + heat detectors, MCPs, sounder strobes, LoRa gateway, fire workstation. Designed for minimal disruption during install.</p>
+        <div class="work-meta">42 wireless devices · CCCF certified · Site survey + commissioning</div>
       </article>
 
-      <article class="card">
-        <span class="tag">Luxury condominium · Sukhumvit</span>
-        <h3 style="margin-top:14px;">ANPR + barrier + face recognition + elevator</h3>
-        <p style="margin-top:10px;">Multi-phase access control: Phase 1 = 2-lane ANPR with auto-barrier control (Standalone, no Server). Phase 3 = Face Recognition at lobby + elevator floor restriction via HIKVISION Master Elevator Controller.</p>
-        <div class="divider"></div>
-        <p style="font-size:.85rem; color:var(--slate-500);">Phased rollout · Integration with existing elevators</p>
+      <article class="work">
+        <span class="work-tag blue">Luxury condominium · Sukhumvit</span>
+        <h3>ANPR + barrier + face recognition + elevator</h3>
+        <p>Multi-phase access control: 2-lane ANPR with auto-barrier (Standalone). Phase 3: Face Recognition at lobby + elevator floor restriction.</p>
+        <div class="work-meta">Phased rollout · Integration with existing elevators</div>
       </article>
 
-      <article class="card">
-        <span class="tag">Residential community · 2 gates</span>
-        <h3 style="margin-top:14px;">Bluetooth Tag entry + Loop Detector exit</h3>
-        <p style="margin-top:10px;">Standalone vehicle access: BT Vehicle Tag for member cars (instant entry, no rolling window), Loop Detector for 2-lane exit. Plus enrollment station, single-door access controller, remote control for guards.</p>
-        <div class="divider"></div>
-        <p style="font-size:.85rem; color:var(--slate-500);">No Server required · No annual license · ~36% cheaper than LPR</p>
+      <article class="work">
+        <span class="work-tag amber">Residential community · 2 gates</span>
+        <h3>Bluetooth Tag entry + Loop Detector exit</h3>
+        <p>Standalone vehicle access: BT Vehicle Tag for members (instant entry, no rolling window), Loop Detector for 2-lane exit. Enrollment station + access controller + guard remotes.</p>
+        <div class="work-meta">No Server required · No annual license · ~36% cheaper than LPR</div>
       </article>
 
-      <article class="card">
-        <span class="tag">Wood-product factory · Industrial</span>
-        <h3 style="margin-top:14px;">Camera-based fire detection (high-dust)</h3>
-        <p style="margin-top:10px;">Where smoke detectors would false-alarm constantly: dual-IR flame cameras at wood ovens, heat-detection cameras at compression machines. Phased deployment to fit operating budget.</p>
-        <div class="divider"></div>
-        <p style="font-size:.85rem; color:var(--slate-500);">2-phase project · 100K initial budget · วสท. compliance path</p>
+      <article class="work">
+        <span class="work-tag green">Wood-product factory · Industrial</span>
+        <h3>Camera-based fire detection (high-dust)</h3>
+        <p>Where smoke detectors would false-alarm constantly: dual-IR flame cameras at wood ovens, heat cameras at compression machines. Phased deployment to fit operating budget.</p>
+        <div class="work-meta">2-phase project · 100K initial budget · วสท. compliance path</div>
       </article>
 
-      <article class="card">
-        <span class="tag">Manufacturing SME</span>
-        <h3 style="margin-top:14px;">Multi-site M365 + backup hardening</h3>
-        <p style="margin-top:10px;">3 production sites, ~80 users. Microsoft 365 tenant baseline, identity hardening, immutable cloud backup, restore drill.</p>
-        <div class="divider"></div>
-        <p style="font-size:.85rem; color:var(--slate-500);">Delivered in 6 weeks · Documented runbook handed over</p>
+      <article class="work">
+        <span class="work-tag purple">Manufacturing SME</span>
+        <h3>Multi-site M365 + backup hardening</h3>
+        <p>3 production sites, ~80 users. Microsoft 365 tenant baseline, identity hardening, immutable cloud backup, restore drill.</p>
+        <div class="work-meta">Delivered in 6 weeks · Documented runbook handed over</div>
       </article>
 
-      <article class="card">
-        <span class="tag">Professional Services SME</span>
-        <h3 style="margin-top:14px;">Server consolidation &amp; DR design</h3>
-        <p style="margin-top:10px;">5 aging physical servers consolidated to a 2-node virtualization cluster with shared storage. Backup &amp; DR runbook with tested restore.</p>
-        <div class="divider"></div>
-        <p style="font-size:.85rem; color:var(--slate-500);">Delivered in 8 weeks · RTO &lt; 4 h, RPO &lt; 1 h</p>
+      <article class="work">
+        <span class="work-tag pink">Professional Services SME</span>
+        <h3>Server consolidation &amp; DR design</h3>
+        <p>5 aging physical servers consolidated to a 2-node virtualization cluster with shared storage. Backup &amp; DR runbook with tested restore.</p>
+        <div class="work-meta">Delivered in 8 weeks · RTO &lt; 4 h, RPO &lt; 1 h</div>
       </article>
     </div>
 
-    <p style="text-align:center; margin-top:32px; font-size:.88rem; color:var(--slate-500);">
-      Sectors we work with regularly: healthcare clinics · luxury condominium · residential community · industrial manufacturing · logistics · professional services
+    <p style="text-align:center;margin-top:32px;font-size:14px;color:var(--bento-muted);">
+      Sectors we work with regularly · healthcare · luxury condominium · residential community · industrial manufacturing · logistics · professional services
     </p>
   </div>
 </section>
 
-<!-- ============ METHODOLOGY ============ -->
-<section class="section reveal-on-scroll">
+<!-- ============ METHODOLOGY — Bento ============ -->
+<section class="bento-section reveal-on-scroll">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">How we work</span>
-      <h2>A disciplined delivery process — from assessment to operations</h2>
+    <div class="bento-section-head">
+      <div>
+        <span class="eyebrow">How we work</span>
+        <h2>Assess. Design. Deliver. Operate.</h2>
+      </div>
+      <span class="head-link" style="cursor:default;">A repeatable 4-step process</span>
     </div>
 
-    <div class="method">
-      <div class="method-step">
-        <div class="method-num">1</div>
+    <div class="bento-method">
+      <div class="step">
+        <div class="step-num">01</div>
         <h3>Assess</h3>
-        <p>Site survey, environment review, requirement gathering, and clear scope of work.</p>
+        <p>Site survey, environment review, requirement gathering, clear scope of work.</p>
       </div>
-      <div class="method-step">
-        <div class="method-num">2</div>
+      <div class="step">
+        <div class="step-num">02</div>
         <h3>Design</h3>
-        <p>Architecture, BOM/BOQ, drawings, and a documented design you can review and approve.</p>
+        <p>Architecture, BOM/BOQ, drawings — a documented design you can review and approve.</p>
       </div>
-      <div class="method-step">
-        <div class="method-num">3</div>
+      <div class="step">
+        <div class="step-num">03</div>
         <h3>Deliver</h3>
         <p>Installation, configuration, testing &amp; commissioning, training, and handover.</p>
       </div>
-      <div class="method-step">
-        <div class="method-num">4</div>
+      <div class="step">
+        <div class="step-num">04</div>
         <h3>Operate</h3>
         <p>Maintenance, monitoring, incident response, and periodic health reviews.</p>
       </div>
@@ -336,33 +372,28 @@
   </div>
 </section>
 
-<!-- ============ HIKVISION FEATURE ============ -->
-<section class="section hik-feature reveal-on-scroll">
-  <div class="container hik-inner">
-    <div>
-      <span class="hik-eyebrow">★ New Product Line • HIKVISION Retailer</span>
-      <h2>Now offering <span class="accent">HIKVISION</span> fire safety products</h2>
-      <p class="lead">
-        We're expanding beyond IT services. ANF SOLUTIONS is now a HIKVISION fire safety retailer in
-        Thailand — supplying intelligent fire detection, wireless fire alarm systems, and AI-enabled
-        fire detection cameras for your projects.
-      </p>
-      <div class="hik-chips">
-        <span class="hik-chip">Conventional Fire Alarm</span>
-        <span class="hik-chip">Fusion Camera</span>
-        <span class="hik-chip">LoRa Wireless</span>
-        <span class="hik-chip">Standalone Detectors</span>
-        <span class="hik-chip">Fire Alarm Cable</span>
+<!-- ============ HIKVISION FEATURE — Bento ============ -->
+<section class="bento-section reveal-on-scroll">
+  <div class="container">
+    <div class="bento-hik">
+      <div class="bento-hik-main">
+        <div class="bento-hik-pill">★ New product line · HIKVISION retailer</div>
+        <h2>Now offering <span class="bento-hik-accent">HIKVISION</span><br>fire safety products.</h2>
+        <p>Intelligent fire detection, wireless fire alarm systems, and AI-enabled flame &amp; heat detection cameras — supplied and integrated by ANF Solutions in Thailand.</p>
+        <div class="bento-hik-chips">
+          <span class="hik-chip">Conventional</span>
+          <span class="hik-chip">Fusion Camera</span>
+          <span class="hik-chip">LoRa Wireless</span>
+          <span class="hik-chip">Standalone</span>
+          <span class="hik-chip">Cable</span>
+        </div>
+        <div class="bento-actions">
+          <a href="hikvision/index.html" class="bento-btn bento-btn-red">Explore HIKVISION →</a>
+          <a href="contact.html" class="bento-btn bento-btn-ghost">Request quote</a>
+        </div>
       </div>
-      <div class="hero-actions">
-        <a href="hikvision/index.html" class="btn hik-btn-red">Explore HIKVISION Products →</a>
-        <a href="contact.html" class="btn btn-outline-light">Request Project Quote</a>
-      </div>
-    </div>
 
-    <aside class="hik-card">
-      <h4>★ What's in the catalogue</h4>
-      <div class="hik-cats">
+      <div class="bento-hik-cats">
         <a class="hik-cat" href="hikvision/products.html#conventional">
           <strong>Conventional</strong>
           <span>FACP, smoke/heat detectors, MCP, bells</span>
@@ -380,7 +411,7 @@
           <span>Smoke, Wi-Fi, CO &amp; gas alarms</span>
         </a>
       </div>
-    </aside>
+    </div>
   </div>
 </section>
 
@@ -390,17 +421,18 @@
      CISSP, CompTIA Security+, CCNA, VMware VCP, AWS/Azure Associate, ISO 27001 LA, etc.
 ============================================================ -->
 
-<!-- ============ FINAL CTA ============ -->
-<section class="section section-sm reveal-on-scroll">
+<!-- ============ FINAL CTA — Bento ============ -->
+<section class="bento-section bento-section-tight reveal-on-scroll">
   <div class="container">
-    <div class="cta-banner">
+    <div class="bento-cta">
       <div>
-        <h2>Need a reliable IT partner?</h2>
-        <p>Share your environment and goals — we'll respond within 24 hours with a practical next step.</p>
+        <div class="bento-cta-eyebrow">★ Ready when you are</div>
+        <h2>Need a reliable<br>IT partner?</h2>
+        <p>Share your environment and goals. We'll respond within 24 hours with a practical next step.</p>
       </div>
-      <div class="cta-banner-actions">
-        <a href="contact.html" class="btn btn-white btn-lg">Request Consultation</a>
-        <a href="mailto:ANFSOLUTIONS.TH@GMAIL.COM" class="btn btn-outline-light btn-lg">Email Us</a>
+      <div class="bento-cta-actions">
+        <a href="contact.html" class="bento-btn bento-btn-yellow">Request consultation →</a>
+        <a href="mailto:ANFSOLUTIONS.TH@GMAIL.COM" class="bento-btn bento-btn-ghost-light">Email us</a>
       </div>
     </div>
   </div>
