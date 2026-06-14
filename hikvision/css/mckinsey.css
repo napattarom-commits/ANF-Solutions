@@ -145,6 +145,12 @@ body.mck-page .hero-eyebrow::before {
   background: var(--mck-accent);
 }
 
+/* Neutralize any legacy hero-mesh red/black background — the editorial hero is white */
+body.mck-page .hero.hero-mesh,
+body.mck-page .hero-mesh { background: var(--mck-bg) !important; }
+body.mck-page .hero-mesh::before,
+body.mck-page .hero-mesh::after { display: none !important; }
+
 /* ===== Hero — editorial 2-col ===== */
 body.mck-page .hero {
   padding: clamp(48px, 7vw, 96px) 0 clamp(48px, 6vw, 80px);
@@ -248,11 +254,14 @@ body.mck-page .feature {
 body.mck-page .feature:last-child { border-right: 0; }
 body.mck-page .feature-icon {
   font-family: var(--mck-serif);
-  font-size: 44px;
+  font-size: 56px;
   font-weight: 600;
   color: var(--mck-accent);
-  margin-bottom: 14px;
+  margin-bottom: 18px;
   line-height: 1;
+  letter-spacing: -2px;
+  font-feature-settings: "tnum";
+  font-style: italic;
 }
 body.mck-page .feature h4 {
   font-family: var(--mck-serif);

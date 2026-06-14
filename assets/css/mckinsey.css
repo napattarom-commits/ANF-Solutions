@@ -294,52 +294,40 @@ body.mck-page .mck-cap-visual {
   background: var(--mck-bg-soft);
   overflow: hidden;
 }
-body.mck-page .mck-cap-visual::before {
-  content: "";
+body.mck-page .mck-cap-visual img {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(135deg, rgba(200,16,46,0.06) 0%, transparent 60%),
-    repeating-linear-gradient(45deg, rgba(26,26,26,0.04) 0 1px, transparent 1px 18px);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
+body.mck-page .mck-cap:hover .mck-cap-visual img { transform: scale(1.03); }
 body.mck-page .mck-cap-visual .mck-cap-num {
   position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top: 18px;
+  right: 22px;
   font-family: var(--mck-serif);
-  font-size: clamp(80px, 12vw, 140px);
+  font-size: clamp(36px, 4vw, 52px);
   font-weight: 600;
   color: var(--mck-ink);
-  opacity: 0.12;
-  letter-spacing: -4px;
+  opacity: 0.45;
+  letter-spacing: -1.5px;
   line-height: 1;
-}
-body.mck-page .mck-cap-visual .mck-cap-icon {
-  position: absolute;
-  bottom: 24px;
-  left: 24px;
-  width: 56px;
-  height: 56px;
-  background: var(--mck-ink);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
+  z-index: 2;
 }
 body.mck-page .mck-cap-visual .mck-cap-tag {
   position: absolute;
-  top: 24px;
-  left: 24px;
-  background: white;
-  color: var(--mck-ink);
-  padding: 5px 12px;
+  top: 22px;
+  left: 22px;
+  background: var(--mck-ink);
+  color: white;
+  padding: 6px 13px;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: var(--mck-track-eyebrow);
   text-transform: uppercase;
+  z-index: 2;
 }
 body.mck-page .mck-cap h3 {
   margin: 0;
