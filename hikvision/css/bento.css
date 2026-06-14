@@ -5,9 +5,9 @@
 
 :root {
   --bento-bg:        #FAFAFA;
-  --bento-ink:       #0F172A;
-  --bento-ink-soft:  #1F2937;
-  --bento-muted:     #64748B;
+  --bento-ink:       #111111;  /* charcoal black (no blue) */
+  --bento-ink-soft:  #262626;  /* neutral warm dark */
+  --bento-muted:     #6B7280;  /* neutral gray */
   --bento-line:      #E5E7EB;
   --bento-red:       #C8102E;
   --bento-red-deep:  #8E0B1F;
@@ -17,8 +17,8 @@
   --bento-amber-ink: #92400E;
   --bento-green-tint:#D1FAE5;
   --bento-green-ink: #065F46;
-  --bento-blue-tint: #DBEAFE;
-  --bento-blue-ink:  #1E40AF;
+  --bento-blue-tint: #F4F4F5;  /* swapped from blue → neutral light gray */
+  --bento-blue-ink:  #374151;  /* swapped from blue → neutral dark gray */
   --bento-purple-tint:#EDE9FE;
   --bento-purple-ink:#5B21B6;
 

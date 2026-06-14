@@ -8,9 +8,9 @@
 :root {
   --bento-bg:        #FAFAFA;
   --bento-bg-soft:   #F4F4F5;
-  --bento-ink:       #0F172A;
-  --bento-ink-soft:  #1F2937;
-  --bento-muted:     #64748B;
+  --bento-ink:       #111111;  /* charcoal black (no blue) */
+  --bento-ink-soft:  #262626;  /* neutral warm dark */
+  --bento-muted:     #6B7280;  /* neutral gray */
   --bento-line:      #E5E7EB;
 
   /* Soft pastel tints (for accent cards) */
@@ -20,8 +20,8 @@
   --bento-amber-ink:   #92400E;
   --bento-green-tint:  #D1FAE5;
   --bento-green-ink:   #065F46;
-  --bento-blue-tint:   #DBEAFE;
-  --bento-blue-ink:    #1E40AF;
+  --bento-blue-tint:   #F4F4F5;  /* swapped from blue → neutral light gray */
+  --bento-blue-ink:    #374151;  /* swapped from blue → neutral dark gray */
   --bento-purple-tint: #EDE9FE;
   --bento-purple-ink:  #5B21B6;
   --bento-pink-tint:   #FCE7F3;
@@ -118,7 +118,7 @@ body.bento-page .site-header .btn-primary {
   transition: transform 0.2s ease, background 0.2s ease;
 }
 body.bento-page .site-header .btn-primary:hover {
-  background: #1F2937;
+  background: #262626;
   transform: translateY(-1px);
 }
 
@@ -537,7 +537,7 @@ body.bento-page .bento-method .step p {
 body.bento-page .bento-method .step:nth-child(1) .step-num { color: var(--bento-red-ink); opacity: 0.5; }
 body.bento-page .bento-method .step:nth-child(2) .step-num { color: var(--bento-amber-ink); opacity: 0.5; }
 body.bento-page .bento-method .step:nth-child(3) .step-num { color: var(--bento-green-ink); opacity: 0.5; }
-body.bento-page .bento-method .step:nth-child(4) .step-num { color: var(--bento-blue-ink); opacity: 0.5; }
+body.bento-page .bento-method .step:nth-child(4) .step-num { color: var(--bento-pink-ink); opacity: 0.5; }
 
 /* ===== HIKVISION feature — Bento ===== */
 body.bento-page .bento-hik {
