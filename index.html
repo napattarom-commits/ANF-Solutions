@@ -14,13 +14,13 @@
   <meta property="og:title" content="ANF SOLUTIONS — One-stop IT Services for SMEs in Thailand" />
   <meta property="og:description" content="ANF Solutions is a Thai one-stop IT services company for SMEs — consulting & implementing infrastructure, network, cloud, security baseline, backup/DR, plus HIKVISION fire safety products." />
   <meta property="og:url" content="https://anfsolutions.co.th/" />
-  <meta property="og:image" content="https://anfsolutions.co.th/assets/img/logo/logo.png" />
+  <meta property="og:image" content="https://anfsolutions.co.th/assets/img/og-banner.jpg" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="th_TH" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="ANF SOLUTIONS — One-stop IT Services for SMEs in Thailand" />
   <meta name="twitter:description" content="ANF Solutions is a Thai one-stop IT services company for SMEs — consulting & implementing infrastructure, network, cloud, security baseline, backup/DR, plus HIKVISION fire safety products." />
-  <meta name="twitter:image" content="https://anfsolutions.co.th/assets/img/logo/logo.png" />
+  <meta name="twitter:image" content="https://anfsolutions.co.th/assets/img/og-banner.jpg" />
   <link rel="canonical" href="https://anfsolutions.co.th/" />
   <meta name="theme-color" content="#0B2545" />
   <script type="application/ld+json">
@@ -30,7 +30,7 @@
   "name": "ANF SOLUTIONS Co., Ltd.",
   "alternateName": "ANF Solutions",
   "url": "https://anfsolutions.co.th/",
-  "logo": "https://anfsolutions.co.th/assets/img/logo/logo.png",
+  "logo": "https://anfsolutions.co.th/assets/img/og-banner.jpg",
   "email": "ANFSOLUTIONS.TH@GMAIL.COM",
   "telephone": "+66-80-495-9965",
   "description": "One-stop IT services for SMEs in Thailand: infrastructure, network, cloud, security baseline, backup/DR, plus HIKVISION fire safety products.",
@@ -42,7 +42,8 @@
   },
   "areaServed": "TH",
   "sameAs": [
-    "https://github.com/napattarom-commits/ANF-Solutions"
+    "https://github.com/napattarom-commits/ANF-Solutions",
+    "https://www.facebook.com/profile.php?id=61587088540066"
   ]
 }
   </script>
@@ -51,7 +52,7 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "ANF SOLUTIONS Co., Ltd.",
-  "image": "https://anfsolutions.co.th/assets/img/logo/logo.png",
+  "image": "https://anfsolutions.co.th/assets/img/og-banner.jpg",
   "url": "https://anfsolutions.co.th/",
   "telephone": "+66-80-495-9965",
   "email": "ANFSOLUTIONS.TH@GMAIL.COM",
@@ -74,6 +75,7 @@
   }
 }
   </script>
+<link rel="stylesheet" href="assets/css/animations.css">
 </head>
 <body>
 
@@ -81,7 +83,7 @@
 <header class="site-header">
   <div class="header-inner">
     <a href="index.html" class="brand">
-      <img src="assets/img/logo/logo.png" alt="ANF SOLUTIONS company logo" class="brand-logo" width="44" height="44" />
+      <img fetchpriority="high" src="assets/img/logo/logo.png" alt="ANF SOLUTIONS company logo" class="brand-logo" width="44" height="44" />
       <div class="brand-text">
         <strong>ANF SOLUTIONS</strong>
         <span>One-stop IT Services</span>
@@ -122,7 +124,7 @@
 </div>
 
 <!-- ============ HERO ============ -->
-<section class="hero">
+<section class="hero hero-mesh">
   <div class="container hero-inner">
     <div>
       <span class="eyebrow eyebrow-on-dark">★ One-stop IT Services for SMEs</span>
@@ -160,7 +162,7 @@
 </section>
 
 <!-- ============ TRUST BAR (under hero) ============ -->
-<section class="trust-bar">
+<section class="trust-bar reveal-on-scroll stagger">
   <div class="container trust-bar-inner">
     <div class="trust-stat"><strong>Clear</strong><span>SCOPE &amp; DELIVERABLES</span></div>
     <div class="trust-stat"><strong>Practical</strong><span>REAL-WORLD SOLUTIONS</span></div>
@@ -170,7 +172,7 @@
 </section>
 
 <!-- ============ SERVICES ============ -->
-<section class="section">
+<section class="section reveal-on-scroll">
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">Services</span>
@@ -237,7 +239,7 @@
 </section>
 
 <!-- ============ RECENT WORK (anonymized) ============ -->
-<section class="section section-alt">
+<section class="section section-alt reveal-on-scroll">
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">Recent work</span>
@@ -245,22 +247,45 @@
       <p class="lead">Client names are kept confidential. Scope, scale, and outcome highlighted.</p>
     </div>
 
-    <!-- TODO: replace placeholder case studies with real anonymized engagements once available -->
     <div class="card-grid card-grid-3">
+      <article class="card">
+        <span class="tag">Healthcare clinic · Bangkok</span>
+        <h3 style="margin-top:14px;">Wireless fire alarm — full building coverage</h3>
+        <p style="margin-top:10px;">8-zone LoRa-based fire alarm system: smoke + heat detectors, manual call points, sounder strobes, LoRa gateway, fire workstation. Designed for minimal disruption to clinic operations during install.</p>
+        <div class="divider"></div>
+        <p style="font-size:.85rem; color:var(--slate-500);">42 wireless devices · CCCF certified · Site survey + commissioning</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Luxury condominium · Sukhumvit</span>
+        <h3 style="margin-top:14px;">ANPR + barrier + face recognition + elevator</h3>
+        <p style="margin-top:10px;">Multi-phase access control: Phase 1 = 2-lane ANPR with auto-barrier control (Standalone, no Server). Phase 3 = Face Recognition at lobby + elevator floor restriction via HIKVISION Master Elevator Controller.</p>
+        <div class="divider"></div>
+        <p style="font-size:.85rem; color:var(--slate-500);">Phased rollout · Integration with existing elevators</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Residential community · 2 gates</span>
+        <h3 style="margin-top:14px;">Bluetooth Tag entry + Loop Detector exit</h3>
+        <p style="margin-top:10px;">Standalone vehicle access: BT Vehicle Tag for member cars (instant entry, no rolling window), Loop Detector for 2-lane exit. Plus enrollment station, single-door access controller, remote control for guards.</p>
+        <div class="divider"></div>
+        <p style="font-size:.85rem; color:var(--slate-500);">No Server required · No annual license · ~36% cheaper than LPR</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Wood-product factory · Industrial</span>
+        <h3 style="margin-top:14px;">Camera-based fire detection (high-dust)</h3>
+        <p style="margin-top:10px;">Where smoke detectors would false-alarm constantly: dual-IR flame cameras at wood ovens, heat-detection cameras at compression machines. Phased deployment to fit operating budget.</p>
+        <div class="divider"></div>
+        <p style="font-size:.85rem; color:var(--slate-500);">2-phase project · 100K initial budget · วสท. compliance path</p>
+      </article>
+
       <article class="card">
         <span class="tag">Manufacturing SME</span>
         <h3 style="margin-top:14px;">Multi-site M365 + backup hardening</h3>
         <p style="margin-top:10px;">3 production sites, ~80 users. Microsoft 365 tenant baseline, identity hardening, immutable cloud backup, restore drill.</p>
         <div class="divider"></div>
         <p style="font-size:.85rem; color:var(--slate-500);">Delivered in 6 weeks · Documented runbook handed over</p>
-      </article>
-
-      <article class="card">
-        <span class="tag">Logistics SME</span>
-        <h3 style="margin-top:14px;">Office network &amp; VPN modernization</h3>
-        <p style="margin-top:10px;">HQ + 2 branches. Replaced flat LAN with VLAN segmentation, deployed enterprise Wi-Fi, IPsec site-to-site VPN, road-warrior client VPN.</p>
-        <div class="divider"></div>
-        <p style="font-size:.85rem; color:var(--slate-500);">Delivered in 4 weeks · Zero unplanned downtime</p>
       </article>
 
       <article class="card">
@@ -273,13 +298,13 @@
     </div>
 
     <p style="text-align:center; margin-top:32px; font-size:.88rem; color:var(--slate-500);">
-      Sectors we work with regularly: SME manufacturing · logistics · professional services · retail · healthcare clinics
+      Sectors we work with regularly: healthcare clinics · luxury condominium · residential community · industrial manufacturing · logistics · professional services
     </p>
   </div>
 </section>
 
 <!-- ============ METHODOLOGY ============ -->
-<section class="section">
+<section class="section reveal-on-scroll">
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">How we work</span>
@@ -312,7 +337,7 @@
 </section>
 
 <!-- ============ HIKVISION FEATURE ============ -->
-<section class="section hik-feature">
+<section class="section hik-feature reveal-on-scroll">
   <div class="container hik-inner">
     <div>
       <span class="hik-eyebrow">★ New Product Line • HIKVISION Retailer</span>
@@ -366,7 +391,7 @@
 ============================================================ -->
 
 <!-- ============ FINAL CTA ============ -->
-<section class="section section-sm">
+<section class="section section-sm reveal-on-scroll">
   <div class="container">
     <div class="cta-banner">
       <div>
@@ -387,7 +412,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="brand">
-          <img src="assets/img/logo/logo.png" alt="ANF SOLUTIONS company logo" class="brand-logo" width="44" height="44" />
+          <img src="assets/img/logo/logo.png" alt="ANF SOLUTIONS company logo" class="brand-logo" width="44" height="44" / loading="lazy" decoding="async">
           <div class="brand-text">
             <strong>ANF SOLUTIONS</strong>
             <span>Co., Ltd.</span>
@@ -443,5 +468,7 @@
 </footer>
 
 <script src="assets/js/menu.js?v=2026-05-23r1"></script>
+<script src="assets/animations.js" defer></script>
+<script src="assets/contact-widget.js" defer></script>
 </body>
 </html>
